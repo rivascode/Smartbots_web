@@ -1,30 +1,93 @@
-# Smartbots_web
+<p align="center">
+  <img src="apps/web/public/assets/logo-smartbots-wordmark.png" alt="SMARTBOTS" width="280" />
+</p>
 
-Sitio web y plataforma base de SMARTBOTS. El proyecto presenta la propuesta comercial de la marca, sus servicios, beneficios, enfoque operativo y canales de contacto con una experiencia visual animada, responsive y preparada para seguir iterando.
+<h1 align="center">Smartbots_web</h1>
 
-## Estado actual
+<p align="center">
+  Sitio web y plataforma base de SMARTBOTS: automatización, inteligencia artificial, desarrollo de software e infraestructura TI para operaciones más eficientes.
+</p>
 
-- Web principal funcionando con navegación por hash: `#inicio`, `#nosotros`, `#servicios`, `#beneficios`, `#contacto`.
-- Hero principal con fondo canvas animado, panel visual de resultados y barras de progreso en movimiento.
-- Secciones internas rediseñadas con efectos tipo liquid glass, fondos animados, rutas visuales, contadores y transiciones al hacer scroll.
-- Logo oficial preparado como assets web en `apps/web/public/assets`.
-- API Express incluida para health check y recepción de contactos.
+<p align="center">
+  <a href="https://github.com/rivascode/Smartbots_web">
+    <img alt="Repositorio" src="https://img.shields.io/badge/GitHub-Smartbots__web-111827?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <img alt="React" src="https://img.shields.io/badge/React-18-22d3ee?style=for-the-badge&logo=react&logoColor=111827" />
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3b82f6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-4-a855f7?style=for-the-badge&logo=vite&logoColor=white" />
+  <img alt="pnpm" src="https://img.shields.io/badge/pnpm-10-f59e0b?style=for-the-badge&logo=pnpm&logoColor=111827" />
+</p>
 
-## Tecnologías usadas
+<p align="center">
+  <img alt="Node" src="https://img.shields.io/badge/Node.js-API-16a34a?style=flat-square&logo=node.js&logoColor=white" />
+  <img alt="Express" src="https://img.shields.io/badge/Express-Backend-111827?style=flat-square&logo=express&logoColor=white" />
+  <img alt="Zod" src="https://img.shields.io/badge/Zod-Validación-2563eb?style=flat-square" />
+  <img alt="Lucide" src="https://img.shields.io/badge/Lucide-Iconos-ec4899?style=flat-square" />
+  <img alt="Canvas" src="https://img.shields.io/badge/Canvas-Animaciones-06b6d4?style=flat-square" />
+</p>
 
-- **Monorepo:** pnpm workspaces.
-- **Frontend:** React 18, TypeScript, Vite.
-- **Backend:** Node.js, Express, TypeScript.
-- **Validación:** Zod para esquemas del API.
-- **Iconografía:** `lucide-react`.
-- **Estilos:** CSS global propio en `apps/web/src/styles/global.css`.
-- **Animaciones:** CSS keyframes, IntersectionObserver para scroll reveal, Canvas 2D para fondos con partículas y conexiones.
-- **Paquete compartido:** `@smartbots/shared` para tipos compartidos entre web y API.
+---
+
+## Vista General
+
+<table>
+  <tr>
+    <td width="33%">
+      <strong>Web animada</strong><br />
+      Hero con canvas, partículas, barras vivas, transiciones al hacer scroll y visuales diferenciados por página.
+    </td>
+    <td width="33%">
+      <strong>Monorepo ordenado</strong><br />
+      Frontend, backend y paquete compartido separados para seguir creciendo sin mezclar responsabilidades.
+    </td>
+    <td width="33%">
+      <strong>Lista para continuar</strong><br />
+      README detallado, scripts claros, assets oficiales y estructura documentada para retomarlo desde otra PC o Mac.
+    </td>
+  </tr>
+</table>
+
+SMARTBOTS_web presenta la propuesta comercial de la marca, sus servicios, beneficios, enfoque operativo y canales de contacto. La experiencia está pensada para sentirse tecnológica, visual, moderna y editable.
+
+## Estado Actual
+
+| Área | Estado |
+| --- | --- |
+| Navegación | Web principal funcionando con rutas por hash: `#inicio`, `#nosotros`, `#servicios`, `#beneficios`, `#contacto`. |
+| Inicio | Hero oscuro animado, panel visual de resultados, barra de métricas, sección de impacto y ruta de trabajo. |
+| Nosotros | Hero con órbita de marca, enfoque operativo y sección de transformación rediseñada. |
+| Servicios | Hero diferenciado, visual de automatización y grilla oscura tipo liquid glass. |
+| Beneficios | Visual de impacto con métricas, contadores y barras animadas. |
+| Contacto | Visual específico de canales, CTA y formulario conectado al API. |
+| API | Express con health check y endpoint de contacto validado con Zod. |
+
+## Paleta Visual
+
+| Color | Uso | Hex aproximado |
+| --- | --- | --- |
+| <span style="display:inline-block;width:18px;height:18px;border-radius:5px;background:#d81bb8;"></span> Magenta SMARTBOTS | Innovación, acentos, CTAs, energía visual. | `#d81bb8` |
+| <span style="display:inline-block;width:18px;height:18px;border-radius:5px;background:#16bdd7;"></span> Cyan tecnológico | Datos, automatización, conexiones y movimiento. | `#16bdd7` |
+| <span style="display:inline-block;width:18px;height:18px;border-radius:5px;background:#111827;"></span> Dark UI | Hero, impacto, contraste y profundidad. | `#111827` |
+| <span style="display:inline-block;width:18px;height:18px;border-radius:5px;background:#f8fbff;border:1px solid #dbeafe;"></span> Light glass | Secciones explicativas, fondos suaves y cards claras. | `#f8fbff` |
+
+## Stack Técnico
+
+| Capa | Tecnología | Uso |
+| --- | --- | --- |
+| Monorepo | pnpm workspaces | Organización de apps y paquetes compartidos. |
+| Frontend | React 18 + TypeScript | Interfaz web, componentes y páginas. |
+| Build web | Vite | Desarrollo rápido y build optimizado. |
+| Backend | Node.js + Express | API base para health y contacto. |
+| Validación | Zod | Validación del payload de contacto. |
+| Iconos | lucide-react | Iconografía consistente en cards, botones y visuales. |
+| Animación | CSS + Canvas 2D + IntersectionObserver | Fondos vivos, barras, contadores y scroll reveal. |
+| Shared | `@smartbots/shared` | Tipos comunes como `PageSlug`. |
 
 ## Requisitos
 
 - Node.js 20 o superior recomendado.
 - pnpm 10.12.1 o compatible.
+- Git instalado para versionar y subir cambios.
 - En Windows, si PowerShell bloquea `pnpm`, usar `pnpm.cmd`.
 
 ## Instalación
@@ -41,7 +104,7 @@ corepack enable
 pnpm.cmd install
 ```
 
-## Levantar el proyecto
+## Levantar el Proyecto
 
 Web + API:
 
@@ -63,10 +126,12 @@ pnpm dev:api
 
 URLs locales:
 
-- Web: `http://127.0.0.1:5173/#inicio`
-- API health: `http://127.0.0.1:4000/api/health`
+| Servicio | URL |
+| --- | --- |
+| Web | `http://127.0.0.1:5173/#inicio` |
+| API health | `http://127.0.0.1:4000/api/health` |
 
-## Scripts principales
+## Scripts Principales
 
 ```bash
 pnpm build
@@ -77,7 +142,7 @@ pnpm --filter @smartbots/api build
 pnpm --filter @smartbots/api typecheck
 ```
 
-## Estructura del proyecto
+## Estructura del Proyecto
 
 ```text
 Smartbots_web/
@@ -129,73 +194,49 @@ Smartbots_web/
   README.md
 ```
 
-## Mapa de secciones
+## Mapa de Páginas
 
-### Inicio
+| Página | Archivo | Rol visual |
+| --- | --- | --- |
+| Inicio | `apps/web/src/features/home/HomePage.tsx` | Primera impresión, tecnología, impacto y ruta de trabajo. |
+| Nosotros | `apps/web/src/features/about/AboutPage.tsx` | Propósito operativo, enfoque y transformación. |
+| Servicios | `apps/web/src/features/services/ServicesPage.tsx` | Soluciones separadas por necesidad real. |
+| Beneficios | `apps/web/src/features/benefits/BenefitsPage.tsx` | Impacto económico, tiempo, recursos y decisiones. |
+| Contacto | `apps/web/src/features/contact/ContactPage.tsx` | Conversión, contacto directo y formulario. |
 
-Archivo principal: `apps/web/src/features/home/HomePage.tsx`
+## Componentes Visuales Clave
 
-- Hero con `HeroMotionBackground` y `DashboardVisual`.
-- Bloque de soluciones tecnológicas con card oscura de automatización.
-- Sección de impacto con fondo animado, contadores y barras.
-- Industrias.
-- Razones para elegir SMARTBOTS.
-- Ruta creativa de siguiente paso con 4 etapas.
+| Componente | Función |
+| --- | --- |
+| `HeroMotionBackground.tsx` | Canvas reutilizable para fondos animados con partículas, líneas y barridos de luz. |
+| `DashboardVisual.tsx` | Panel visual del hero principal con métricas, barras animadas y bullets. |
+| `ServiceAutomationVisual.tsx` | Visual de servicios orientado a desarrollo, bots, APIs, datos e infraestructura. |
+| `BenefitsImpactVisual.tsx` | Visual de beneficios con indicadores, contadores y estados de impacto. |
+| `ContactChannelsVisual.tsx` | Representación visual de contacto multicanal. |
+| `AboutOrbit.tsx` | Órbita animada con el isotipo de SMARTBOTS para la página Nosotros. |
+| `AnimatedCounter.tsx` | Contador visual reutilizable para métricas. |
+| `ScrollEnhancements.tsx` | Transiciones suaves al entrar en viewport y botón flotante para volver arriba. |
 
-### Nosotros
+## Sistema de Diseño
 
-Archivo principal: `apps/web/src/features/about/AboutPage.tsx`
-
-- Hero oscuro con órbita del logo SMARTBOTS.
-- Sección de enfoque con contraste claro, cards tipo glass e iconos.
-- Sección de transformación operativa rediseñada con visual central y etapas.
-
-### Servicios
-
-Archivo principal: `apps/web/src/features/services/ServicesPage.tsx`
-
-- Hero con visual de automatización, bots, APIs, datos y cloud.
-- Grilla de soluciones en fondo oscuro animado.
-- Cards tipo liquid glass con textos centrados e iconos de `lucide-react`.
-- Se eliminó el CTA final para evitar repetición.
-
-### Beneficios
-
-Archivo principal: `apps/web/src/features/benefits/BenefitsPage.tsx`
-
-- Hero diferenciado con visual de impacto económico y operativo.
-- Visual `BenefitsImpactVisual` con métricas, barras y contadores.
-- Enfoque en costos, tiempo, recursos, KPIs y decisiones.
-
-### Contacto
-
-Archivo principal: `apps/web/src/features/contact/ContactPage.tsx`
-
-- Hero con visual específico de canales de contacto.
-- Formulario conectado al cliente `contactApi`.
-- Información de contacto empresarial.
-
-## Componentes visuales clave
-
-- `HeroMotionBackground.tsx`: canvas reutilizable para fondos animados con partículas, líneas y barridos de luz.
-- `DashboardVisual.tsx`: panel visual del hero principal con métricas, barras animadas y bullets.
-- `ServiceAutomationVisual.tsx`: visual de servicios orientado a desarrollo, bots, APIs, datos e infraestructura.
-- `BenefitsImpactVisual.tsx`: visual de beneficios con indicadores, contadores y estados de impacto.
-- `ContactChannelsVisual.tsx`: representación visual de contacto multicanal.
-- `AboutOrbit.tsx`: órbita animada con el isotipo de SMARTBOTS para la página Nosotros.
-- `AnimatedCounter.tsx`: contador visual reutilizable para métricas.
-- `ScrollEnhancements.tsx`: activa transiciones suaves al entrar en viewport y agrega botón flotante para volver arriba.
-
-## Sistema visual
-
-La identidad visual se apoya en:
-
-- Magenta SMARTBOTS para energía, innovación y llamados a la acción.
-- Cyan para tecnología, datos y automatización.
-- Fondos oscuros para impacto, hero y secciones de alto contraste.
-- Fondos claros con glass para secciones explicativas.
-- Bordes suaves, blur, transparencias y sombras para efecto liquid glass.
-- Grillas sutiles y partículas animadas para reforzar la idea de sistemas conectados.
+<table>
+  <tr>
+    <td><strong>Glass UI</strong></td>
+    <td>Cards con blur, bordes translúcidos, sombras suaves y apariencia ligera.</td>
+  </tr>
+  <tr>
+    <td><strong>Fondos vivos</strong></td>
+    <td>Canvas, grillas, partículas, líneas y gradientes para comunicar sistemas conectados.</td>
+  </tr>
+  <tr>
+    <td><strong>Contraste por sección</strong></td>
+    <td>Heroes oscuros, bloques claros de lectura y secciones de impacto con mayor profundidad.</td>
+  </tr>
+  <tr>
+    <td><strong>Responsive</strong></td>
+    <td>Ajustes para desktop, tablet y mobile, incluyendo tamaños tipo iPhone 15 Pro Max.</td>
+  </tr>
+</table>
 
 Los estilos están centralizados en:
 
@@ -203,18 +244,9 @@ Los estilos están centralizados en:
 apps/web/src/styles/global.css
 ```
 
-Ahí se ajustan:
+Ahí se ajustan colores, tipografías, layout, animaciones, scroll reveal, cards glass, hover states y breakpoints.
 
-- Colores base.
-- Tipografías y escalas.
-- Layout responsive.
-- Animaciones de hero y fondos.
-- Scroll reveal.
-- Cards tipo glass.
-- Estados hover.
-- Breakpoints mobile/tablet/desktop.
-
-## Dónde editar textos
+## Dónde Editar Contenido
 
 La mayor parte del contenido editable vive en:
 
@@ -231,9 +263,9 @@ Editar ahí cuando se necesite cambiar:
 - Datos de contacto.
 - Listas y textos reutilizados.
 
-Los textos muy específicos de cada hero o visual están dentro de su página o componente visual correspondiente.
+Los textos específicos de cada hero o visual están dentro de su página o componente visual correspondiente.
 
-## Logos y assets
+## Logos y Assets
 
 Assets generados desde el logo oficial suministrado:
 
@@ -253,81 +285,73 @@ apps/web/public/assets/smartbots-app-icon.png
 
 El header usa el wordmark oficial. Los visuales internos usan el isotipo cuando se necesita mayor recordación de marca.
 
-## Criterios de diseño aplicados
+## Verificación
 
-- Cada página tiene un hero de tamaño similar al inicio, pero con diseño distinto para evitar repetición.
-- Las secciones de servicios, beneficios y contacto usan visuales propios, no la misma ventana tipo dashboard.
-- Las animaciones de scroll se aplican globalmente para que los bloques entren de forma suave.
-- Los textos principales se ajustaron para explicar mejor el valor de SMARTBOTS.
-- Se priorizó contraste en fondos oscuros y legibilidad en cards glass.
-- Responsive revisado para tamaños tipo iPhone 15 Pro Max, especialmente en Nosotros.
+Antes de subir el proyecto se verificó:
 
-## Flujo recomendado para seguir trabajando
+```bash
+pnpm.cmd build
+pnpm.cmd typecheck
+```
 
-1. Levantar la web:
-
-   ```bash
-   pnpm dev:web
-   ```
-
-2. Abrir:
-
-   ```text
-   http://127.0.0.1:5173/#inicio
-   ```
-
-3. Editar textos en `siteContent.ts`.
-4. Editar layout de páginas en `features/*`.
-5. Editar animaciones y responsive en `global.css`.
-6. Verificar:
-
-   ```bash
-   pnpm --filter @smartbots/web typecheck
-   pnpm --filter @smartbots/web build
-   ```
-
-## Verificación realizada
-
-Antes de preparar esta documentación se verificó:
+También se validó la web con:
 
 ```bash
 pnpm.cmd --filter @smartbots/web build
 pnpm.cmd --filter @smartbots/web typecheck
 ```
 
-Ambos comandos pasaron correctamente.
+## Flujo Recomendado para el Lunes
 
-## Notas para publicación
+1. Clonar el repo:
 
-El repositorio objetivo debe llamarse:
+   ```bash
+   git clone https://github.com/rivascode/Smartbots_web.git
+   cd Smartbots_web
+   ```
 
-```text
-Smartbots_web
-```
+2. Instalar dependencias:
 
-Si el proyecto aún no tiene Git inicializado:
+   ```bash
+   corepack enable
+   pnpm install
+   ```
 
-```bash
-git init
-git branch -M main
-git add .
-git commit -m "Initial Smartbots web project"
-git remote add origin https://github.com/<usuario>/Smartbots_web.git
-git push -u origin main
-```
+3. Levantar la web:
 
-Si el repositorio ya existe y tiene remoto configurado:
+   ```bash
+   pnpm dev:web
+   ```
 
-```bash
-git add .
-git commit -m "Document and polish Smartbots web"
-git push
-```
+4. Abrir:
 
-## Recomendaciones para el lunes
+   ```text
+   http://127.0.0.1:5173/#inicio
+   ```
 
-- Revisar la web completa en desktop y mobile.
-- Confirmar textos finales de cada servicio.
-- Reemplazar placeholders de clientes cuando existan logos autorizados.
-- Conectar formulario de contacto a correo, CRM o WhatsApp empresarial según decisión comercial.
-- Definir hosting final para frontend y API.
+5. Editar textos en `siteContent.ts`.
+6. Editar layouts en `features/*`.
+7. Editar animaciones y responsive en `global.css`.
+8. Verificar antes de subir cambios:
+
+   ```bash
+   pnpm build
+   pnpm typecheck
+   ```
+
+## Próximos Pasos
+
+| Prioridad | Tarea |
+| --- | --- |
+| Alta | Revisar la web completa en desktop y mobile. |
+| Alta | Confirmar textos finales de cada servicio. |
+| Media | Reemplazar placeholders de clientes con logos autorizados. |
+| Media | Conectar formulario a correo, CRM o WhatsApp empresarial. |
+| Media | Definir hosting final para frontend y API. |
+
+---
+
+<p align="center">
+  <strong>SMARTBOTS</strong><br />
+  Tecnología con propósito operativo.
+</p>
