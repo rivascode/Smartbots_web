@@ -183,9 +183,33 @@ export const businessAreaCards: InfoCardData[] = [
 ];
 
 export const contactReasons: InfoCardData[] = [
-  { title: "Soluciones adaptadas", description: "Tecnología diseñada según las necesidades reales de tu empresa." },
-  { title: "Implementación ágil", description: "Resultados visibles desde etapas tempranas." },
-  { title: "Tecnología escalable", description: "Soluciones preparadas para crecer junto a tu negocio." },
-  { title: "Acompañamiento continuo", description: "Soporte y evolución constante de cada solución." },
-  { title: "Resultados reales", description: "Priorizamos eficiencia, productividad y control operativo." }
+  {
+    icon: "target",
+    tone: "magenta",
+    title: "Soluciones adaptadas",
+    description: "Tecnología diseñada según las necesidades reales de tu empresa."
+  },
+  {
+    icon: "zap",
+    tone: "cyan",
+    title: "Implementación ágil",
+    description: "Resultados visibles desde etapas tempranas."
+  },
+  {
+    icon: "cloud",
+    title: "Tecnología escalable",
+    description: "Soluciones preparadas para crecer junto a tu negocio."
+  },
+  {
+    icon: "shield",
+    tone: "magenta",
+    title: "Acompañamiento continuo",
+    description: "Soporte y evolución constante de cada solución."
+  },
+  {
+    icon: "analytics",
+    tone: "cyan",
+    title: "Resultados reales",
+    description: "Priorizamos eficiencia, productividad y control operativo."
+  }
 ];

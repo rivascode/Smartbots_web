@@ -9,7 +9,7 @@ const bars = [
 
 export function BenefitsImpactVisual() {
   return (
-    <div className="benefits-impact-visual" aria-label="Beneficios economicos, tiempo y recursos">
+    <div className="benefits-impact-visual" aria-label="Beneficios económicos, tiempo y recursos">
       <div className="impact-summary">
         <div className="impact-signal down">
           <TrendingDown size={28} strokeWidth={1.9} />

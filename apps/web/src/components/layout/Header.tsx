@@ -2,6 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import type { PageSlug } from "@smartbots/shared";
 import { navItems, pageHref } from "../../app/navigation";
+import { assetPath } from "../../utils/assets";
 
 interface HeaderProps {
   currentPage: PageSlug;
@@ -16,7 +17,7 @@ export function Header({ currentPage }: HeaderProps) {
       <div className="container">
         <nav className="navbar" aria-label="Navegación principal">
           <a className="logo" href={pageHref("inicio")} onClick={closeMenu} aria-label="Ir al inicio">
-            <img src="/assets/logo-smartbots-wordmark.webp" alt="SMARTBOTS" />
+            <img src={assetPath("assets/logo-smartbots-wordmark.webp")} alt="SMARTBOTS" />
           </a>
 
           <div className={`nav-links ${menuOpen ? "open" : ""}`}>

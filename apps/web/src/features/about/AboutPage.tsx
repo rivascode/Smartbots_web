@@ -5,6 +5,7 @@ import { LinkButton } from "../../components/ui/Button";
 import { SectionHead } from "../../components/ui/SectionHead";
 import { aboutCards } from "../../data/siteContent";
 import { useInViewOnce } from "../../hooks/useInViewOnce";
+import { assetPath } from "../../utils/assets";
 
 const visionPillars: Array<{
   number: string;
@@ -98,7 +99,7 @@ export function AboutPage() {
                 <span>Bots, IA y flujos digitales</span>
               </div>
               <div className="vision-core">
-                <img src="/assets/logo-smartbots-mark.webp" alt="" />
+                <img src={assetPath("assets/logo-smartbots-mark.webp")} alt="" />
                 <strong>Operación inteligente</strong>
                 <span>SMARTBOTS</span>
               </div>

@@ -9,6 +9,7 @@ import { ContactPage } from "../features/contact/ContactPage";
 import { HomePage } from "../features/home/HomePage";
 import { ServicesPage } from "../features/services/ServicesPage";
 import { readPageFromHash } from "./navigation";
+import { updateSeo } from "./seo";
 
 const pages: Record<PageSlug, JSX.Element> = {
   inicio: <HomePage />,
@@ -30,6 +31,7 @@ export function App() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    updateSeo(currentPage);
   }, [currentPage]);
 
   // Las páginas se importan directo para evitar pantallas en blanco durante cambios de sección.

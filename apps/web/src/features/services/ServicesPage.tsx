@@ -14,14 +14,14 @@ export function ServicesPage() {
           <div>
             <span className="eyebrow">Servicios</span>
             <h1>
-              Impulsamos empresas mediante <span className="gradient-text">tecnologia inteligente</span>
+              Impulsamos empresas mediante <span className="gradient-text">tecnología inteligente</span>
             </h1>
             <p className="lead">
-              En SMARTBOTS desarrollamos soluciones tecnologicas adaptadas a las necesidades reales de cada empresa.
+              En SMARTBOTS desarrollamos soluciones tecnológicas adaptadas a las necesidades reales de cada empresa.
             </p>
             <p className="lead">
-              Combinamos automatizacion, inteligencia artificial, desarrollo de software e infraestructura TI para
-              construir operaciones mas eficientes, conectadas y escalables.
+              Combinamos automatización, inteligencia artificial, desarrollo de software e infraestructura TI para
+              construir operaciones más eficientes, conectadas y escalables.
             </p>
           </div>
           <ServiceAutomationVisual />
@@ -45,8 +45,8 @@ export function ServicesPage() {
         <div className="container">
           <SectionHead
             centered
-            kicker="Casos de exito"
-            title="Empresas que confian en SMARTBOTS"
+            kicker="Casos de éxito"
+            title="Empresas que confían en SMARTBOTS"
             description="Espacio reservado para logos de clientes autorizados."
           />
           <div className="logos">

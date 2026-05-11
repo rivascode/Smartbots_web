@@ -1,3 +1,5 @@
+import { assetPath } from "../../utils/assets";
+
 const nodes = [
   { className: "n1", title: "Procesos", text: "Mapeo real de la operación" },
   { className: "n2", title: "IA + RPA", text: "Automatización inteligente" },
@@ -12,7 +14,7 @@ export function AboutOrbit() {
         <div className="orbit-ring" />
         <div className="orbit-ring two" />
         <div className="orbit-core">
-          <img src="/assets/logo-smartbots-mark.webp" alt="SMARTBOTS Logo" />
+          <img src={assetPath("assets/logo-smartbots-mark.webp")} alt="SMARTBOTS Logo" />
         </div>
         {nodes.map((node) => (
           <div className={`orbit-node ${node.className}`} key={node.title}>

@@ -1,4 +1,5 @@
 import { Bot, Braces, BrainCircuit, Cloud, Database } from "lucide-react";
+import { assetPath } from "../../utils/assets";
 
 const nodes = [
   { label: "Bots", icon: Bot, className: "service-node bot" },
@@ -10,7 +11,7 @@ const nodes = [
 
 export function ServiceAutomationVisual() {
   return (
-    <div className="service-automation-visual" aria-label="Arquitectura de automatizacion y desarrollo">
+    <div className="service-automation-visual" aria-label="Arquitectura de automatización y desarrollo">
       <div className="code-panel" aria-hidden="true">
         <span>workflow.deploy()</span>
         <span>bot.run("24/7")</span>
@@ -18,7 +19,7 @@ export function ServiceAutomationVisual() {
       </div>
       <div className="automation-core">
         <div className="core-chip">
-          <img src="/assets/logo-smartbots-mark.webp" alt="" />
+          <img src={assetPath("assets/logo-smartbots-mark.webp")} alt="" />
         </div>
         <div className="core-modules" aria-hidden="true">
           <span />
