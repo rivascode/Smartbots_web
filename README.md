@@ -26,6 +26,12 @@
   <img alt="Canvas" src="https://img.shields.io/badge/Canvas-Animaciones-06b6d4?style=flat-square" />
 </p>
 
+<p align="center">
+  <a href="https://github.com/rivascode/Smartbots_web/raw/main/exports/smartbots_web_export_html.zip">
+    <img alt="Descargar HTML" src="https://img.shields.io/badge/Descargar-HTML_comprimido-d81bb8?style=for-the-badge&logo=html5&logoColor=white" />
+  </a>
+</p>
+
 ---
 
 ## Vista General
@@ -48,6 +54,26 @@
 </table>
 
 SMARTBOTS_web presenta la propuesta comercial de la marca, sus servicios, beneficios, enfoque operativo y canales de contacto. La experiencia está pensada para sentirse tecnológica, visual, moderna y editable.
+
+## Descarga Rápida HTML
+
+Para compartir la web como archivo comprimido y abrirla sin instalar dependencias:
+
+[Descargar `smartbots_web_export_html.zip`](https://github.com/rivascode/Smartbots_web/raw/main/exports/smartbots_web_export_html.zip)
+
+Uso recomendado:
+
+1. Descargar el ZIP.
+2. Descomprimirlo.
+3. Abrir `Smartbots_web_export_html/index.html` con doble clic.
+
+Para regenerar el comprimido desde el proyecto:
+
+```bash
+pnpm --filter @smartbots/web export:html
+cd ..
+zip -qr smartbots_web_export_html.zip Smartbots_web_export_html
+```
 
 ## Estado Actual
 
