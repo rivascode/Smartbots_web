@@ -3,8 +3,8 @@ import { AnimatedCounter } from "../../components/ui/AnimatedCounter";
 import { IconBadge } from "../../components/ui/IconBadge";
 import { InfoCard } from "../../components/ui/InfoCard";
 import { SectionHead } from "../../components/ui/SectionHead";
-import { DashboardVisual } from "../../components/visuals/DashboardVisual";
 import { HeroMotionBackground } from "../../components/visuals/HeroMotionBackground";
+import { OperationFlowVisual } from "../../components/visuals/OperationFlowVisual";
 import { homeSolutions, industries, reasons } from "../../data/siteContent";
 
 const reasonIcons = ["target", "zap", "workflow", "shield"] as const;
@@ -51,13 +51,13 @@ export function HomePage() {
         </div>
         <div className="container hero-grid">
           <div className="hero-copy">
-            <span className="eyebrow">Tecnología que impulsa tu negocio</span>
+            <span className="eyebrow">Automatización que impulsa tu negocio</span>
             <h1>
-              Tecnología disruptiva para empresas que quieren <span className="gradient-text">evolucionar</span>
+              Procesos más simples para empresas que quieren <span className="gradient-text">evolucionar</span>
             </h1>
             <p className="lead">
-              Automatización, Inteligencia Artificial, desarrollo de software y soluciones TI orientadas a productividad,
-              eficiencia y crecimiento.
+              Automatizamos procesos, conectamos tus sistemas y creamos software a medida para que tu empresa
+              trabaje mejor, reduzca errores y crezca con más control.
             </p>
             <div className="actions">
               <LinkButton page="contacto">Solicitar diagnóstico</LinkButton>
@@ -67,21 +67,7 @@ export function HomePage() {
             </div>
           </div>
 
-          <DashboardVisual
-            className="hero-dashboard"
-            title="Centro de mando inteligente"
-            metrics={[
-              { value: "24/7", label: "Bots en acción", progress: 92 },
-              { value: "API", label: "Ecosistema unido", progress: 84 },
-              { value: "IA", label: "Decisiones asistidas", progress: 76 },
-              { value: "KPIs", label: "Pulso del negocio", progress: 88 }
-            ]}
-            bullets={[
-              "Cada proceso visible en una sola vista",
-              "Flujos que avanzan sin perseguir tareas",
-              "Datos listos para decidir y crecer"
-            ]}
-          />
+          <OperationFlowVisual />
         </div>
       </section>
 
@@ -91,33 +77,36 @@ export function HomePage() {
           <SectionHead
             centered
             kicker="Qué hacemos"
-            title="Soluciones tecnológicas para empresas modernas"
-            description="Ayudamos a organizaciones a optimizar procesos, integrar sistemas y acelerar resultados mediante tecnología diseñada para necesidades reales de negocio."
+            title="Soluciones digitales para empresas modernas"
+            description="Ayudamos a organizaciones a optimizar procesos, integrar sistemas y acelerar resultados con herramientas diseñadas para necesidades reales de negocio."
           />
           <div className="solution-showcase">
             <article className="solution-feature">
               <div>
                 <IconBadge name="automation" tone="white" />
-                <h3>Automatización inteligente como motor operativo</h3>
-                <p>Bots, RPA, flujos digitales e IA para reducir trabajo manual, errores y tiempos muertos.</p>
+                <h3>Menos operación manual. Más foco en crecer.</h3>
+                <p>
+                  Convertimos tareas repetitivas en procesos claros para que tu equipo deje de perseguir pendientes y
+                  se concentre en atender, vender y tomar mejores decisiones.
+                </p>
               </div>
               <div className="solution-feature-panel" aria-hidden="true">
                 <div className="solution-chip">
-                  <strong>24/7</strong>
-                  <span>Bots activos</span>
+                  <strong>Orden</strong>
+                  <span>Cada tarea tiene responsable y estado</span>
                 </div>
                 <div className="solution-chip">
-                  <strong>API</strong>
-                  <span>Sistemas conectados</span>
+                  <strong>Velocidad</strong>
+                  <span>Menos esperas y menos reprocesos</span>
                 </div>
                 <div className="solution-chip">
-                  <strong>IA</strong>
-                  <span>Decisiones asistidas</span>
+                  <strong>Control</strong>
+                  <span>Gerencia ve avances sin perseguir reportes</span>
                 </div>
                 <div className="solution-mini-flow">
-                  <span>Entrada</span>
-                  <span>Bot</span>
-                  <span>Resultados</span>
+                  <span>Detectamos</span>
+                  <span>Automatizamos</span>
+                  <span>Medimos</span>
                 </div>
               </div>
               <LinkButton page="servicios">Ver soluciones</LinkButton>
@@ -145,11 +134,11 @@ export function HomePage() {
           <span className="impact-orbit two" />
         </div>
         <div className="container">
-          <SectionHead
-            kicker="Impacto"
-            title="Tecnología enfocada en resultados reales"
-            description="Digitalizar es reducir costos, errores y tiempos con flujos medibles."
-          />
+            <SectionHead
+              kicker="Impacto"
+            title="Resultados reales para operaciones más simples"
+              description="Digitalizar es reducir costos, errores y tiempos con flujos medibles."
+            />
           <div className="impact-board">
             <div className="impact-copy">
               <h3>
@@ -160,8 +149,8 @@ export function HomePage() {
             </div>
             <div className="impact-bars">
               <ImpactBar title="Reducción de tareas manuales" value="70%" progress={70} />
-              <ImpactBar title="Disponibilidad operativa" value="24/7" progress={95} />
-              <ImpactBar title="Control y trazabilidad" value="KPIs" progress={88} />
+              <ImpactBar title="Disponibilidad operativa" value="100%" progress={100} />
+              <ImpactBar title="Control y trazabilidad" value="60%" progress={60} />
             </div>
           </div>
         </div>
@@ -184,9 +173,9 @@ export function HomePage() {
       {/* Razones de elección: cards centradas para explicar el enfoque diferencial. */}
       <section className="home-reasons">
         <div className="container reason-layout">
-          <SectionHead
+            <SectionHead
             kicker="Por qué SMARTBOTS"
-            title="Más que tecnología. Resultados."
+            title="Más que sistemas. Resultados."
             description="Entendemos procesos, no solo sistemas. Diseñamos soluciones personalizadas, implementamos rápido y acompañamos la evolución de cada operación."
           />
           <div className="reason-timeline">

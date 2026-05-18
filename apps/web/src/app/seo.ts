@@ -12,21 +12,21 @@ const seoByPage: Record<PageSlug, { title: string; description: string; keywords
       "automatización de procesos, inteligencia artificial empresarial, software empresarial, integraciones API, infraestructura TI, Perú, LATAM"
   },
   nosotros: {
-    title: "Nosotros | Tecnología con propósito operativo | SMARTBOTS",
+    title: "Nosotros | Soluciones digitales con propósito operativo | SMARTBOTS",
     description:
-      "Conoce el enfoque de SMARTBOTS para transformar operaciones con automatización, IA, datos conectados y tecnología escalable.",
-    keywords: "SMARTBOTS, tecnología empresarial, automatización, IA, operaciones, transformación digital"
+      "Conoce el enfoque de SMARTBOTS para mejorar operaciones con automatización, datos conectados y software escalable.",
+    keywords: "SMARTBOTS, soluciones digitales, automatización, datos conectados, operaciones, transformación digital"
   },
   servicios: {
     title: "Servicios | Automatización, IA, software e infraestructura TI",
     description:
-      "Servicios tecnológicos para empresas: automatización inteligente, inteligencia artificial, desarrollo de software, integraciones API, outsourcing TI y cloud.",
-    keywords: "servicios tecnológicos, automatización, IA, desarrollo de software, APIs, outsourcing TI, cloud"
+      "Servicios para empresas: automatización de procesos, inteligencia artificial, desarrollo de software, integraciones API, outsourcing TI y cloud.",
+    keywords: "automatización empresarial, inteligencia artificial, desarrollo de software, integraciones API, outsourcing TI, cloud"
   },
   beneficios: {
     title: "Beneficios | Productividad, control y eficiencia operativa",
     description:
-      "Beneficios de implementar tecnología inteligente en operaciones: menos reprocesos, mejor control, productividad, datos conectados y crecimiento escalable.",
+      "Beneficios de automatizar operaciones: menos reprocesos, mejor control, productividad, datos conectados y crecimiento escalable.",
     keywords: "beneficios de automatización, productividad empresarial, eficiencia operativa, control de procesos"
   },
   contacto: {

@@ -31,7 +31,7 @@ const visionPillars: Array<{
   {
     number: "03",
     title: "Escalamos con control",
-    description: "Preparamos la operación para crecer con trazabilidad, KPIs y tecnología fácil de evolucionar.",
+    description: "Preparamos la operación para crecer con trazabilidad, indicadores claros y sistemas fáciles de evolucionar.",
     icon: "cloud",
     tone: "default"
   }
@@ -48,14 +48,14 @@ export function AboutPage() {
           <div className="about-hero-copy">
             <span className="eyebrow">Nosotros</span>
             <h1>
-              Transformamos operaciones mediante <span className="gradient-text">tecnología inteligente</span>
+              Hacemos que tu operación trabaje mejor con <span className="gradient-text">soluciones digitales</span>
             </h1>
             <p className="lead">
               En SMARTBOTS ayudamos a empresas a optimizar procesos, integrar sistemas y acelerar resultados mediante
-              soluciones tecnológicas modernas.
+              herramientas digitales claras, medibles y adaptadas a su operación.
             </p>
             <p className="lead">
-              Combinamos automatización, inteligencia artificial, desarrollo de software e infraestructura TI para
+              Combinamos automatización, análisis de datos, desarrollo de software e infraestructura TI para
               construir operaciones más eficientes, escalables y conectadas.
             </p>
             <LinkButton page="contacto">Agenda una reunión</LinkButton>
@@ -69,7 +69,7 @@ export function AboutPage() {
           <SectionHead
             centered
             kicker="Nuestro enfoque"
-            title="Tecnología con propósito operativo"
+            title="Soluciones con propósito operativo"
             description="Nuestro enfoque está orientado a generar impacto real en productividad, control operativo y crecimiento empresarial."
           />
           <div ref={approachReveal.ref} className={`cards reveal-stagger ${approachReveal.hasEnteredView ? "is-visible" : ""}`}>

@@ -5,7 +5,7 @@ export const aboutCards: InfoCardData[] = [
     icon: "target",
     tone: "magenta",
     title: "Innovación aplicada",
-    description: "Implementamos tecnología moderna enfocada en resolver desafíos reales de negocio."
+    description: "Implementamos soluciones prácticas enfocadas en resolver desafíos reales de negocio."
   },
   {
     icon: "zap",
@@ -15,7 +15,7 @@ export const aboutCards: InfoCardData[] = [
   },
   {
     icon: "brain",
-    title: "Tecnología estratégica",
+    title: "Estrategia digital",
     description: "Diseñamos soluciones alineadas a objetivos operativos, financieros y de crecimiento."
   },
   {
@@ -68,7 +68,7 @@ export const reasons = [
   {
     number: "01",
     title: "Enfoque estratégico",
-    description: "Entendemos procesos reales de negocio antes de proponer tecnología."
+    description: "Entendemos procesos reales de negocio antes de proponer una solución."
   },
   {
     number: "02",
@@ -78,7 +78,7 @@ export const reasons = [
   {
     number: "03",
     title: "Soluciones personalizadas",
-    description: "Tecnología adaptada al tamaño, operación y madurez digital del cliente."
+    description: "Herramientas adaptadas al tamaño, operación y madurez digital del cliente."
   },
   {
     number: "04",
@@ -120,7 +120,7 @@ export const serviceCards: InfoCardData[] = [
     icon: "cloud",
     tone: "cyan",
     title: "Cloud & Infraestructura",
-    description: "Diseñamos entornos tecnológicos escalables y seguros.",
+    description: "Diseñamos entornos escalables, seguros y preparados para crecer.",
     items: ["Virtualización", "Servidores", "Cloud", "Redes", "Continuidad operativa"]
   },
   {
@@ -170,7 +170,7 @@ export const benefitCards: InfoCardData[] = [
   {
     icon: "cloud",
     title: "Escalabilidad empresarial",
-    description: "La tecnología acompaña el crecimiento de tu operación sin aumentar complejidad."
+    description: "La solución acompaña el crecimiento de tu operación sin aumentar complejidad."
   }
 ];
 
@@ -187,7 +187,7 @@ export const contactReasons: InfoCardData[] = [
     icon: "target",
     tone: "magenta",
     title: "Soluciones adaptadas",
-    description: "Tecnología diseñada según las necesidades reales de tu empresa."
+    description: "Propuestas diseñadas según las necesidades reales de tu empresa."
   },
   {
     icon: "zap",
@@ -197,7 +197,7 @@ export const contactReasons: InfoCardData[] = [
   },
   {
     icon: "cloud",
-    title: "Tecnología escalable",
+    title: "Crecimiento ordenado",
     description: "Soluciones preparadas para crecer junto a tu negocio."
   },
   {

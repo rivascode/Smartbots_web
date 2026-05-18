@@ -56,7 +56,7 @@ export function BenefitsPage() {
             centered
             kicker="Resultados visibles"
             title="Resultados visibles para operaciones modernas"
-            description="Implementar tecnología inteligente transforma la productividad, el control y la capacidad de crecimiento."
+            description="Automatizar procesos clave mejora la productividad, el control y la capacidad de crecimiento."
           />
           <div className="cards">
             {benefitCards.map((card) => (
