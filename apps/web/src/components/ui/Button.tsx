@@ -17,6 +17,19 @@ export function LinkButton({ page, variant = "primary", children }: PropsWithChi
   );
 }
 
+interface ExternalButtonProps {
+  href: string;
+  variant?: ButtonVariant;
+}
+
+export function ExternalButton({ href, variant = "primary", children }: PropsWithChildren<ExternalButtonProps>) {
+  return (
+    <a className={`btn btn-${variant}`} href={href} target="_blank" rel="noreferrer">
+      {children}
+    </a>
+  );
+}
+
 interface ActionButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
 }

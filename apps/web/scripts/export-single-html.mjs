@@ -9,10 +9,12 @@ const repoDir = resolve(webDir, "../..");
 const distDir = join(webDir, "dist");
 const outputDir = resolve(repoDir, "../Smartbots_web_export_html");
 
-const logoAssets = [
+const inlineAssets = [
   "logo-smartbots-wordmark.webp",
   "logo-smartbots-official-light.webp",
-  "logo-smartbots-mark.webp"
+  "logo-smartbots-mark.webp",
+  "hero-biorobot-automation.png",
+  "contact-biorobot-assistant.png"
 ];
 
 function escapeForScript(value) {
@@ -23,6 +25,7 @@ function mimeFor(fileName) {
   const ext = extname(fileName);
   if (ext === ".png") return "image/png";
   if (ext === ".svg") return "image/svg+xml";
+  if (ext === ".jpg" || ext === ".jpeg") return "image/jpeg";
   return "image/webp";
 }
 
@@ -52,9 +55,11 @@ async function main() {
   const css = readFileSync(join(outputDir, cssMatch[1]), "utf8");
   let js = readFileSync(join(outputDir, jsMatch[1]), "utf8");
 
-  const logoMap = Object.fromEntries(logoAssets.map((asset) => [`assets/${asset}`, toDataUrl(asset)]));
-  const helperStart = js.indexOf("function lr(e)");
-  const helperEnd = js.indexOf("function tp()", helperStart);
+  const assetMap = Object.fromEntries(inlineAssets.map((asset) => [`assets/${asset}`, toDataUrl(asset)]));
+  const helperMatch = js.match(/function\s+([A-Za-z_$][\w$]*)\(e\)\{return`\.\//);
+  const helperName = helperMatch?.[1] ?? "";
+  const helperStart = helperName ? js.indexOf(`function ${helperName}(e)`) : -1;
+  const helperEnd = helperStart === -1 ? -1 : js.indexOf("function ", helperStart + 1);
 
   if (helperStart === -1 || helperEnd === -1) {
     throw new Error("No se encontró el helper de assets en el bundle generado.");
@@ -63,7 +68,7 @@ async function main() {
   const helper = js.slice(helperStart, helperEnd);
   js = js.replace(
     helper,
-    `function lr(e){const n=e.replace(/^\\\\/+/,\"\");const a=${escapeForScript(logoMap)};return a[n]||\`./\${n}\`}`
+    `function ${helperName}(e){const n=e.replace(/^\\\\/+/,\"\");const a=${escapeForScript(assetMap)};return a[n]||\`./\${n}\`}`
   );
 
   html = html.replace(cssMatch[0], () => `<style>\n${css}\n</style>`);

@@ -1,7 +1,7 @@
 import { solutionOptions, type ContactRequest } from "@smartbots/shared";
 import type { FormEvent } from "react";
 import { useState } from "react";
-import { ActionButton } from "../../components/ui/Button";
+import { ActionButton, ExternalButton } from "../../components/ui/Button";
 import { IconBadge } from "../../components/ui/IconBadge";
 import { SectionHead } from "../../components/ui/SectionHead";
 import { ContactChannelsVisual } from "../../components/visuals/ContactChannelsVisual";
@@ -20,9 +20,8 @@ const initialForm: ContactRequest = {
 
 const directContacts = [
   { label: "Correo", value: siteSettings.contact.email, href: `mailto:${siteSettings.contact.email}` },
-  { label: "WhatsApp", value: siteSettings.contact.phoneLabel, href: siteSettings.contact.whatsappUrl },
-  { label: "LinkedIn", value: siteSettings.contact.linkedinLabel, href: siteSettings.contact.linkedinUrl },
-  { label: "Cobertura", value: siteSettings.contact.region, href: "" }
+  { label: "WhatsApp", value: siteSettings.contact.phoneLabel, href: siteSettings.contact.whatsappUrl, featured: true },
+  { label: "RR.SS", value: siteSettings.contact.linkedinLabel, href: siteSettings.contact.linkedinUrl }
 ] as const;
 
 export function ContactPage() {
@@ -118,9 +117,9 @@ export function ContactPage() {
               Nuestro equipo está listo para ayudarte a optimizar procesos, integrar sistemas y acelerar resultados.
             </p>
             <div className="actions">
-              <ActionButton onClick={scrollToForm}>Agenda una reunión</ActionButton>
+              <ExternalButton href={siteSettings.contact.appointmentUrl}>Agenda una reunión</ExternalButton>
               <ActionButton variant="secondary" onClick={scrollToForm}>
-                Solicita un diagnóstico
+                Completar formulario
               </ActionButton>
             </div>
           </div>
@@ -144,11 +143,14 @@ export function ContactPage() {
                   {directContacts.map((item) => (
                     <div className="contact-direct-item" key={item.label}>
                       <span>{item.label}</span>
-                      {item.href ? (
-                        <a href={item.href}>{item.value}</a>
-                      ) : (
-                        <strong>{item.value}</strong>
-                      )}
+                      <a
+                        className={"featured" in item && item.featured ? "contact-action-link" : undefined}
+                        href={item.href}
+                        target={item.href.startsWith("http") ? "_blank" : undefined}
+                        rel={item.href.startsWith("http") ? "noreferrer" : undefined}
+                      >
+                        {item.value}
+                      </a>
                     </div>
                   ))}
                 </div>

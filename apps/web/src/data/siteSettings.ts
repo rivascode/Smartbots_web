@@ -10,6 +10,7 @@ export interface EditableSiteSettings {
     phoneLabel: string;
     phoneNumber: string;
     whatsappUrl: string;
+    appointmentUrl: string;
     linkedinLabel: string;
     linkedinUrl: string;
     region: string;
@@ -24,12 +25,13 @@ export const siteSettings: EditableSiteSettings = {
     socialHandle: "@smartbotsperu"
   },
   contact: {
-    email: "contacto@smartbots.pe",
-    phoneLabel: "WhatsApp empresarial",
-    phoneNumber: "",
-    whatsappUrl: "",
+    email: "hola@smartbots.pe",
+    phoneLabel: "Abrir WhatsApp",
+    phoneNumber: "+51953771234",
+    whatsappUrl: "https://wa.me/51953771234",
+    appointmentUrl: "https://calendar.app.google/rdKBQfcK2ZanAWSo7",
     linkedinLabel: "LinkedIn",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/company/smartbotsperu/posts/?feedView=all",
     region: "Perú - Atención LATAM"
   }
 };

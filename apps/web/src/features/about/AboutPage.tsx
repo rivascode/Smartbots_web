@@ -1,9 +1,10 @@
 import { AboutOrbit } from "../../components/visuals/AboutOrbit";
 import { IconBadge, type IconName, type IconTone } from "../../components/ui/IconBadge";
 import { InfoCard } from "../../components/ui/InfoCard";
-import { LinkButton } from "../../components/ui/Button";
+import { ExternalButton } from "../../components/ui/Button";
 import { SectionHead } from "../../components/ui/SectionHead";
 import { aboutCards } from "../../data/siteContent";
+import { siteSettings } from "../../data/siteSettings";
 import { useInViewOnce } from "../../hooks/useInViewOnce";
 import { assetPath } from "../../utils/assets";
 
@@ -58,7 +59,7 @@ export function AboutPage() {
               Combinamos automatización, análisis de datos, desarrollo de software e infraestructura TI para
               construir operaciones más eficientes, escalables y conectadas.
             </p>
-            <LinkButton page="contacto">Agenda una reunión</LinkButton>
+            <ExternalButton href={siteSettings.contact.appointmentUrl}>Agenda una reunión</ExternalButton>
           </div>
           <AboutOrbit />
         </div>

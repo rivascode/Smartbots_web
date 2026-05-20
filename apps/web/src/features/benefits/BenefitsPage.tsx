@@ -1,14 +1,15 @@
-import { LinkButton } from "../../components/ui/Button";
+import { ExternalButton, LinkButton } from "../../components/ui/Button";
 import { InfoCard } from "../../components/ui/InfoCard";
 import { AnimatedCounter } from "../../components/ui/AnimatedCounter";
 import { SectionHead } from "../../components/ui/SectionHead";
 import { BenefitsImpactVisual } from "../../components/visuals/BenefitsImpactVisual";
 import { HeroMotionBackground } from "../../components/visuals/HeroMotionBackground";
 import { benefitCards, businessAreaCards } from "../../data/siteContent";
+import { siteSettings } from "../../data/siteSettings";
 
 const kpis = [
-  { value: "50%", label: "Hasta 50% menos costos operativos." },
-  { value: "70%", label: "Hasta 70% menos tiempo en tareas repetitivas." },
+  { value: "-50%", label: "Hasta 50% menos costos operativos." },
+  { value: "-70%", label: "Hasta 70% menos tiempo en tareas repetitivas." },
   { value: "KPIs", label: "Información y métricas en tiempo real." },
   { value: "24/7", label: "Mayor capacidad operativa sin aumentar personal." }
 ];
@@ -40,7 +41,7 @@ export function BenefitsPage() {
               automatización, inteligencia artificial y soluciones digitales.
             </p>
             <div className="actions">
-              <LinkButton page="contacto">Solicitar diagnóstico</LinkButton>
+              <ExternalButton href={siteSettings.contact.appointmentUrl}>Solicitar diagnóstico</ExternalButton>
               <LinkButton page="servicios" variant="secondary">
                 Ver soluciones
               </LinkButton>

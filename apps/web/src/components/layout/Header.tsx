@@ -2,6 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import type { PageSlug } from "@smartbots/shared";
 import { navItems, pageHref } from "../../app/navigation";
+import { siteSettings } from "../../data/siteSettings";
 import { assetPath } from "../../utils/assets";
 
 interface HeaderProps {
@@ -33,7 +34,7 @@ export function Header({ currentPage }: HeaderProps) {
             ))}
           </div>
 
-          <a className="btn btn-primary nav-cta" href={pageHref("contacto")} onClick={closeMenu}>
+          <a className="btn btn-primary nav-cta" href={siteSettings.contact.appointmentUrl} target="_blank" rel="noreferrer" onClick={closeMenu}>
             Solicitar diagnóstico
           </a>
 

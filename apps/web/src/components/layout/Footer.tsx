@@ -11,8 +11,16 @@ export function Footer() {
             alt="SMARTBOTS - Automatiza tus procesos, simplifica el éxito"
           />
         </div>
-        <div>
-          {siteSettings.brand.websiteLabel} - {siteSettings.contact.email} - {siteSettings.brand.socialHandle}
+        <div className="footer-links">
+          <a href={siteSettings.brand.websiteUrl} target="_blank" rel="noreferrer">
+            {siteSettings.brand.websiteLabel}
+          </a>
+          <span>-</span>
+          <a href={`mailto:${siteSettings.contact.email}`}>{siteSettings.contact.email}</a>
+          <span>-</span>
+          <a href={siteSettings.contact.linkedinUrl} target="_blank" rel="noreferrer">
+            {siteSettings.brand.socialHandle}
+          </a>
         </div>
       </div>
     </footer>

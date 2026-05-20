@@ -1,4 +1,4 @@
-import { LinkButton } from "../../components/ui/Button";
+import { ExternalButton, LinkButton } from "../../components/ui/Button";
 import { AnimatedCounter } from "../../components/ui/AnimatedCounter";
 import { IconBadge } from "../../components/ui/IconBadge";
 import { InfoCard } from "../../components/ui/InfoCard";
@@ -6,6 +6,7 @@ import { SectionHead } from "../../components/ui/SectionHead";
 import { HeroMotionBackground } from "../../components/visuals/HeroMotionBackground";
 import { OperationFlowVisual } from "../../components/visuals/OperationFlowVisual";
 import { homeSolutions, industries, reasons } from "../../data/siteContent";
+import { siteSettings } from "../../data/siteSettings";
 
 const reasonIcons = ["target", "zap", "workflow", "shield"] as const;
 
@@ -60,7 +61,7 @@ export function HomePage() {
               trabaje mejor, reduzca errores y crezca con más control.
             </p>
             <div className="actions">
-              <LinkButton page="contacto">Solicitar diagnóstico</LinkButton>
+              <ExternalButton href={siteSettings.contact.appointmentUrl}>Solicitar diagnóstico</ExternalButton>
               <LinkButton page="servicios" variant="secondary">
                 Conoce nuestras soluciones
               </LinkButton>
@@ -203,7 +204,7 @@ export function HomePage() {
               en una operación más eficiente, medible y escalable.
             </p>
             <div className="actions">
-              <LinkButton page="contacto">Solicitar diagnóstico</LinkButton>
+              <ExternalButton href={siteSettings.contact.appointmentUrl}>Solicitar diagnóstico</ExternalButton>
               <LinkButton page="servicios" variant="secondary">
                 Ver soluciones
               </LinkButton>
