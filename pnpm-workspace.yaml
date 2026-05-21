@@ -1,7 +1,0 @@
-packages:
-  - "apps/*"
-  - "packages/*"
-
-# Allow native build scripts for selected deps (e.g. esbuild binary).
-onlyBuiltDependencies:
-  - esbuild
