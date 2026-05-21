@@ -4379,7 +4379,10 @@ h3 {
 }
 
 .logos {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  max-width: 940px;
+  margin: 0 auto;
 }
 
 .kpi,
@@ -5081,11 +5084,32 @@ h3 {
 
 .logo-box {
   display: grid;
-  min-height: 78px;
+  min-height: 132px;
+  padding: 26px;
   place-items: center;
   color: #7b8490;
   font-weight: 800;
   text-align: center;
+}
+
+.logo-box img {
+  display: block;
+  width: min(100%, 210px);
+  height: 74px;
+  object-fit: contain;
+  filter: saturate(1.02) contrast(1.03);
+}
+
+.logo-box .client-logo-mission {
+  width: min(100%, 185px);
+}
+
+.logo-box .client-logo-piem {
+  width: min(100%, 230px);
+}
+
+.logo-box .client-logo-chavimochic {
+  width: min(100%, 220px);
 }
 
 #formulario {

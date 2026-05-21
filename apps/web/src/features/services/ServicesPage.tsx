@@ -2,8 +2,25 @@ import { InfoCard } from "../../components/ui/InfoCard";
 import { SectionHead } from "../../components/ui/SectionHead";
 import { ServiceAutomationVisual } from "../../components/visuals/ServiceAutomationVisual";
 import { serviceCards } from "../../data/siteContent";
+import { assetPath } from "../../utils/assets";
 
-const clients = ["Logo cliente", "Logo cliente", "Logo cliente", "Logo cliente", "Logo cliente"];
+const clients = [
+  {
+    name: "Chavimochic Despachos Aduaneros",
+    logo: "assets/client-logo-chavimochic.png",
+    className: "client-logo-chavimochic"
+  },
+  {
+    name: "Mission",
+    logo: "assets/client-logo-mission.png",
+    className: "client-logo-mission"
+  },
+  {
+    name: "PI-EM Cargo",
+    logo: "assets/client-logo-piem-cargo.png",
+    className: "client-logo-piem"
+  }
+];
 
 export function ServicesPage() {
   return (
@@ -40,19 +57,19 @@ export function ServicesPage() {
         </div>
       </section>
 
-      {/* Placeholder controlado para logos; reemplazar solo con marcas autorizadas por clientes. */}
+      {/* Logos autorizados por clientes. */}
       <section className="soft">
         <div className="container">
           <SectionHead
             centered
             kicker="Casos de éxito"
             title="Empresas que confían en SMARTBOTS"
-            description="Espacio reservado para logos de clientes autorizados."
+            description="Marcas que ya nos han permitido acompañar procesos reales con soluciones digitales."
           />
           <div className="logos">
-            {clients.map((client, index) => (
-              <div className="logo-box" key={`${client}-${index}`}>
-                {client}
+            {clients.map((client) => (
+              <div className="logo-box" key={client.name}>
+                <img className={client.className} src={assetPath(client.logo)} alt={client.name} />
               </div>
             ))}
           </div>
