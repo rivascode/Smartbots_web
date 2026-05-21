@@ -45,7 +45,7 @@ La web incluye:
 - Widget flotante de WhatsApp con el robot de SMARTBOTS.
 - Formulario de contacto conectado a una API Express.
 - SEO dinámico por página, Open Graph, Twitter Cards, canonical y JSON-LD.
-- Export HTML autocontenido para abrir en presentaciones sin instalar dependencias.
+- Export HTML portable para abrir en presentaciones sin instalar dependencias.
 
 ## Stack Técnico
 
@@ -197,7 +197,7 @@ http://127.0.0.1:4173/#inicio
 
 ## Export HTML para Presentación
 
-Generar versión autocontenida:
+Generar versión portable:
 
 ```bash
 pnpm export:html
@@ -206,7 +206,7 @@ pnpm export:html
 Esto crea:
 
 ```text
-../Smartbots_web_export_html/index.html
+../Smartbots_web_export_html/
 ```
 
 Para compartirla como ZIP:
@@ -327,7 +327,7 @@ Smartbots_web/
 | `pnpm build` | Compila todos los paquetes. |
 | `pnpm build:web` | Compila solo la web. |
 | `pnpm preview:web` | Previsualiza la web compilada. |
-| `pnpm export:html` | Genera HTML autocontenido para presentación. |
+| `pnpm export:html` | Genera HTML portable para presentación. |
 
 ---
 
