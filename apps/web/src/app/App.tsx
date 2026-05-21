@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { PageSlug } from "@smartbots/shared";
 import { Footer } from "../components/layout/Footer";
 import { Header } from "../components/layout/Header";
+import { FloatingWhatsApp } from "../components/ui/FloatingWhatsApp";
 import { BackToTopButton, ScrollReveal } from "../components/ui/ScrollEnhancements";
 import { AboutPage } from "../features/about/AboutPage";
 import { BenefitsPage } from "../features/benefits/BenefitsPage";
@@ -44,6 +45,7 @@ export function App() {
         {page}
       </main>
       <ScrollReveal page={currentPage} />
+      <FloatingWhatsApp />
       <BackToTopButton />
       <Footer />
     </div>

@@ -7,11 +7,11 @@ const previewImage = `${siteUrl}assets/logo-smartbots-official.png`;
 
 const seoByPage: Record<PageSlug, { title: string; description: string; keywords: string; route: string }> = {
   inicio: {
-    title: "SMARTBOTS | Automatización de procesos, IA y software empresarial",
+    title: "SMARTBOTS | Automatización de procesos y software empresarial",
     description:
       "Automatizamos procesos, conectamos sistemas y desarrollamos software a medida para empresas que buscan reducir errores, ahorrar tiempo y crecer con control.",
     keywords:
-      "automatización de procesos, inteligencia artificial empresarial, software empresarial, RPA, bots empresariales, integraciones API, Perú, LATAM",
+      "automatización de procesos, inteligencia artificial empresarial, software empresarial, bots empresariales, sistemas conectados, Perú, LATAM",
     route: ""
   },
   nosotros: {
@@ -22,17 +22,17 @@ const seoByPage: Record<PageSlug, { title: string; description: string; keywords
     route: "#nosotros"
   },
   servicios: {
-    title: "Servicios | Automatización, IA, software e infraestructura TI",
+    title: "Servicios | Automatización, software e infraestructura empresarial",
     description:
-      "Servicios SMARTBOTS: automatización inteligente, inteligencia artificial, desarrollo de software, integraciones API, cloud, outsourcing TI y soluciones logísticas.",
-    keywords: "automatización empresarial, inteligencia artificial, desarrollo de software, integraciones API, outsourcing TI, cloud, RPA",
+      "Servicios SMARTBOTS: automatización operativa, inteligencia artificial, desarrollo de software, sistemas conectados, infraestructura, soporte TI y soluciones logísticas.",
+    keywords: "automatización empresarial, inteligencia artificial, desarrollo de software, sistemas conectados, outsourcing TI, infraestructura",
     route: "#servicios"
   },
   beneficios: {
     title: "Beneficios | Menos costos, más productividad y control operativo",
     description:
-      "Descubre cómo la automatización ayuda a reducir costos, ahorrar tiempo, mejorar KPIs y aumentar la capacidad operativa sin sumar complejidad.",
-    keywords: "beneficios de automatización, productividad empresarial, eficiencia operativa, reducción de costos, KPIs",
+      "Descubre cómo la automatización ayuda a reducir costos, ahorrar tiempo, mejorar indicadores y aumentar la capacidad operativa sin sumar complejidad.",
+    keywords: "beneficios de automatización, productividad empresarial, eficiencia operativa, reducción de costos, indicadores",
     route: "#beneficios"
   },
   contacto: {
@@ -86,7 +86,7 @@ function setJsonLd(page: PageSlug) {
           "Automatización de procesos",
           "Inteligencia artificial empresarial",
           "Desarrollo de software",
-          "Integraciones API",
+          "Sistemas conectados",
           "Infraestructura TI"
         ],
         contactPoint: {
@@ -119,15 +119,15 @@ function setJsonLd(page: PageSlug) {
       {
         "@type": "Service",
         "@id": `${siteUrl}#services`,
-        name: "Automatización de procesos, IA y software empresarial",
+        name: "Automatización de procesos y software empresarial",
         provider: { "@id": `${siteUrl}#organization` },
         areaServed: ["Perú", "LATAM"],
         serviceType: [
           "Automatización inteligente",
           "Inteligencia artificial",
           "Desarrollo de software",
-          "Integraciones API",
-          "Cloud e infraestructura"
+          "Sistemas conectados",
+          "Infraestructura empresarial"
         ],
         url: `${siteUrl}#servicios`
       },

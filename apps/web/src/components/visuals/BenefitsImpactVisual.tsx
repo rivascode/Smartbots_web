@@ -39,7 +39,7 @@ export function BenefitsImpactVisual() {
         ))}
       </div>
       <div className="impact-cards">
-        <span>KPIs en tiempo real</span>
+        <span>Indicadores en tiempo real</span>
         <span>Decisiones más rápidas</span>
       </div>
     </div>

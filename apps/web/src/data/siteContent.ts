@@ -28,26 +28,26 @@ export const aboutCards: InfoCardData[] = [
 
 export const homeSolutions = [
   {
-    title: "Inteligencia Artificial",
-    description: "OCR, agentes IA y automatización cognitiva.",
-    icon: "brain",
+    title: "Tareas que se resuelven solas",
+    description: "Automatizamos registros, validaciones y seguimiento para reducir trabajo manual.",
+    icon: "automation",
     tone: "cyan"
   },
   {
-    title: "Desarrollo de Software",
-    description: "Apps, plataformas y sistemas empresariales.",
+    title: "Herramientas hechas para tu operación",
+    description: "Creamos plataformas y sistemas que se adaptan a cómo trabaja tu empresa.",
     icon: "globe",
     tone: "default"
   },
   {
-    title: "Integraciones API",
-    description: "Conectamos ERPs, CRMs y plataformas.",
+    title: "Sistemas que conversan entre sí",
+    description: "Unimos tus plataformas para evitar doble registro, errores y reprocesos.",
     icon: "link",
     tone: "magenta"
   },
   {
-    title: "Cloud & Infraestructura",
-    description: "Servidores, virtualización y arquitectura escalable.",
+    title: "Base segura para crecer",
+    description: "Preparamos entornos estables, escalables y listos para acompañar el negocio.",
     icon: "cloud",
     tone: "cyan"
   }
@@ -73,7 +73,7 @@ export const reasons = [
   {
     number: "02",
     title: "Implementación ágil",
-    description: "Resultados visibles desde etapas tempranas."
+    description: "Avances claros desde las primeras etapas, sin esperar meses para ver impacto."
   },
   {
     number: "03",
@@ -91,17 +91,17 @@ export const serviceCards: InfoCardData[] = [
   {
     icon: "automation",
     tone: "magenta",
-    title: "Automatización Inteligente",
+    title: "Automatización operativa",
     description:
-      "Automatizamos tareas repetitivas y procesos operativos mediante bots y flujos digitales capaces de trabajar 24/7 con alta precisión.",
+      "Convertimos tareas repetitivas en flujos digitales que trabajan de forma constante, ordenada y con menos errores.",
     items: ["Facturación", "Validaciones", "Reportes", "Procesos administrativos", "Flujos documentarios"]
   },
   {
     icon: "brain",
     tone: "cyan",
-    title: "Inteligencia Artificial",
-    description: "Implementamos soluciones IA enfocadas en productividad y automatización empresarial.",
-    items: ["IA documental", "OCR inteligente", "Agentes virtuales", "Asistentes internos", "Automatización cognitiva"]
+    title: "Soluciones con inteligencia artificial",
+    description: "Usamos asistentes digitales y lectura automática de información para ahorrar tiempo en tareas clave.",
+    items: ["Lectura de documentos", "Extracción de datos", "Asistentes virtuales", "Soporte interno", "Clasificación automática"]
   },
   {
     icon: "globe",
@@ -112,16 +112,16 @@ export const serviceCards: InfoCardData[] = [
   {
     icon: "link",
     tone: "magenta",
-    title: "Integraciones API",
+    title: "Sistemas conectados",
     description: "Conectamos sistemas y plataformas para centralizar información y eliminar reprocesos.",
-    items: ["ERP", "CRM", "APIs empresariales", "SUNAT", "WhatsApp", "Sistemas internos"]
+    items: ["Sistemas administrativos", "Plataformas comerciales", "SUNAT", "WhatsApp", "Sistemas internos"]
   },
   {
     icon: "cloud",
     tone: "cyan",
-    title: "Cloud & Infraestructura",
+    title: "Infraestructura y servidores",
     description: "Diseñamos entornos escalables, seguros y preparados para crecer.",
-    items: ["Virtualización", "Servidores", "Cloud", "Redes", "Continuidad operativa"]
+    items: ["Virtualización", "Servidores", "Entornos en la nube", "Redes", "Continuidad operativa"]
   },
   {
     icon: "monitor",
@@ -179,35 +179,35 @@ export const businessAreaCards: InfoCardData[] = [
   { icon: "workflow", tone: "cyan", title: "Operaciones", description: "Procesos más rápidos y trazables." },
   { icon: "user", title: "RRHH", description: "Automatización administrativa y documental." },
   { icon: "briefcase", tone: "magenta", title: "Comercial", description: "Información integrada y seguimiento en tiempo real." },
-  { icon: "shield", tone: "cyan", title: "Gerencia", description: "KPIs y decisiones basadas en datos." }
+  { icon: "shield", tone: "cyan", title: "Gerencia", description: "Indicadores claros para decidir con datos." }
 ];
 
 export const contactReasons: InfoCardData[] = [
   {
-    icon: "target",
+    icon: "layers",
     tone: "magenta",
     title: "Soluciones adaptadas",
     description: "Propuestas diseñadas según las necesidades reales de tu empresa."
   },
   {
-    icon: "zap",
+    icon: "rocket",
     tone: "cyan",
     title: "Implementación ágil",
-    description: "Resultados visibles desde etapas tempranas."
+    description: "Avances claros desde las primeras etapas."
   },
   {
-    icon: "cloud",
+    icon: "gauge",
     title: "Crecimiento ordenado",
     description: "Soluciones preparadas para crecer junto a tu negocio."
   },
   {
-    icon: "shield",
+    icon: "handshake",
     tone: "magenta",
     title: "Acompañamiento continuo",
     description: "Soporte y evolución constante de cada solución."
   },
   {
-    icon: "analytics",
+    icon: "check",
     tone: "cyan",
     title: "Resultados reales",
     description: "Priorizamos eficiencia, productividad y control operativo."

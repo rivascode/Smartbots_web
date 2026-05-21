@@ -85,7 +85,7 @@ export function AboutPage() {
         <div className="container">
           <SectionHead
             centered
-            kicker="Cómo transformamos una operación"
+            kicker="¿Cómo transformamos una operación?"
             title="De procesos manuales a una operación conectada y medible."
             description="Partimos de la realidad de cada empresa, automatizamos lo repetitivo, conectamos los sistemas y dejamos una base preparada para crecer."
           />

@@ -10,7 +10,7 @@ import { siteSettings } from "../../data/siteSettings";
 const kpis = [
   { value: "-50%", label: "Hasta 50% menos costos operativos." },
   { value: "-70%", label: "Hasta 70% menos tiempo en tareas repetitivas." },
-  { value: "KPIs", label: "Información y métricas en tiempo real." },
+  { value: "100%", label: "Procesos clave visibles para tomar decisiones a tiempo." },
   { value: "24/7", label: "Mayor capacidad operativa sin aumentar personal." }
 ];
 
@@ -34,7 +34,7 @@ export function BenefitsPage() {
           <div className="hero-copy">
             <span className="eyebrow">Beneficios medibles</span>
             <h1>
-              Resultados visibles para empresas que quieren <span className="gradient-text">crecer con control</span>
+              Mejoras concretas para empresas que quieren <span className="gradient-text">crecer con control</span>
             </h1>
             <p className="lead">
               Ayudamos a las empresas a optimizar operaciones, reducir costos y acelerar resultados mediante
@@ -55,8 +55,8 @@ export function BenefitsPage() {
         <div className="container">
           <SectionHead
             centered
-            kicker="Resultados visibles"
-            title="Resultados visibles para operaciones modernas"
+            kicker="Impacto en la operación"
+            title="Mejoras que se notan en el día a día"
             description="Automatizar procesos clave mejora la productividad, el control y la capacidad de crecimiento."
           />
           <div className="cards">
@@ -74,7 +74,7 @@ export function BenefitsPage() {
           <span className="impact-orbit two" />
         </div>
         <div className="container">
-          <SectionHead kicker="KPIs" title="Empresas más eficientes, ágiles y escalables" />
+          <SectionHead kicker="Indicadores claros" title="Empresas más eficientes, ágiles y escalables" />
           <div className="kpi-grid">
             {kpis.map((kpi) => (
               <article className="kpi" key={kpi.value}>

@@ -77,9 +77,9 @@ export function HomePage() {
         <div className="container">
           <SectionHead
             centered
-            kicker="Qué hacemos"
-            title="Soluciones digitales para empresas modernas"
-            description="Ayudamos a organizaciones a optimizar procesos, integrar sistemas y acelerar resultados con herramientas diseñadas para necesidades reales de negocio."
+            kicker="¿Qué hacemos?"
+            title="Convertimos procesos pesados en operaciones más simples"
+            description="Ayudamos a que tu empresa trabaje con menos tareas manuales, menos reprocesos y más claridad sobre lo que ocurre cada día."
           />
           <div className="solution-showcase">
             <article className="solution-feature">
@@ -159,7 +159,7 @@ export function HomePage() {
 
       <section className="soft">
         <div className="container">
-          <SectionHead centered kicker="Industrias" title="Industrias donde impulsamos transformación digital" />
+          <SectionHead centered kicker="¿A qué industrias ayudamos?" title="Sectores donde ordenamos procesos y conectamos equipos" />
           <div className="industries">
             {industries.map((industry, index) => (
               <article className="industry" key={industry.title}>
@@ -175,9 +175,9 @@ export function HomePage() {
       <section className="home-reasons">
         <div className="container reason-layout">
             <SectionHead
-            kicker="Por qué SMARTBOTS"
+            kicker="¿Por qué SMARTBOTS?"
             title="Más que sistemas. Resultados."
-            description="Entendemos procesos, no solo sistemas. Diseñamos soluciones personalizadas, implementamos rápido y acompañamos la evolución de cada operación."
+            description="Primero entendemos cómo trabaja tu equipo. Luego diseñamos una solución a medida, la implementamos por etapas y te acompañamos para que la operación siga mejorando."
           />
           <div className="reason-timeline">
             {reasons.map((reason, index) => (

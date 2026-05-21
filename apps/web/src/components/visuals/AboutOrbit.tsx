@@ -2,8 +2,8 @@ import { assetPath } from "../../utils/assets";
 
 const nodes = [
   { className: "n1", title: "Procesos", text: "Mapeo real de la operación" },
-  { className: "n2", title: "IA + RPA", text: "Automatización inteligente" },
-  { className: "n3", title: "Datos", text: "KPIs para decidir mejor" },
+  { className: "n2", title: "Automatización", text: "Tareas repetitivas bajo control" },
+  { className: "n3", title: "Datos", text: "Indicadores para decidir mejor" },
   { className: "n4", title: "Escala", text: "Sistemas listos para crecer" }
 ];
 

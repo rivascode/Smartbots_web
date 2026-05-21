@@ -14,14 +14,14 @@ export function ServicesPage() {
           <div>
             <span className="eyebrow">Servicios</span>
             <h1>
-              Impulsamos empresas con <span className="gradient-text">automatización y software a medida</span>
+              Impulsamos empresas con <span className="gradient-text">procesos automatizados y software a medida</span>
             </h1>
             <p className="lead">
-              En SMARTBOTS desarrollamos soluciones digitales adaptadas a las necesidades reales de cada empresa.
+              En SMARTBOTS creamos soluciones digitales pensadas para la forma real en que trabaja cada empresa.
             </p>
             <p className="lead">
-              Combinamos automatización, análisis de información, desarrollo de software e infraestructura TI para
-              construir operaciones más eficientes, conectadas y escalables.
+              Ordenamos tareas, conectamos sistemas y desarrollamos herramientas a medida para que tu operación sea más
+              eficiente, clara y preparada para crecer.
             </p>
           </div>
           <ServiceAutomationVisual />

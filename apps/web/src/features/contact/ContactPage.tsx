@@ -131,9 +131,9 @@ export function ContactPage() {
         <div className="container split">
           <div>
             <SectionHead
-              kicker="Cuéntanos"
-              title="Cuéntanos qué necesita tu empresa"
-              description="Queremos entender tus procesos, desafíos y objetivos para ayudarte a construir una solución tecnológica alineada a tu operación."
+              kicker="Empecemos"
+              title="Hablemos de lo que necesita tu empresa"
+              description="Queremos entender tus procesos, desafíos y objetivos para proponerte una solución clara, útil y alineada a tu operación."
             />
             <div className="contact-direct">
               <article className="contact-direct-panel">
@@ -292,9 +292,8 @@ export function ContactPage() {
         <div className="container">
           <SectionHead centered kicker="Diferencial" title="¿Por qué trabajar con SMARTBOTS?" />
           <div className="contact-reasons-list">
-            {contactReasons.map((card, index) => (
+            {contactReasons.map((card) => (
               <article className="contact-reason-row" key={card.title}>
-                <span className="contact-reason-number">{String(index + 1).padStart(2, "0")}</span>
                 <IconBadge name={card.icon ?? "target"} tone={card.tone} />
                 <div>
                   <h3>{card.title}</h3>

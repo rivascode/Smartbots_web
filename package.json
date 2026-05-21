@@ -9,6 +9,9 @@
     "dev:web": "pnpm --filter @smartbots/shared build && pnpm --filter @smartbots/web dev",
     "dev:api": "pnpm --filter @smartbots/shared build && pnpm --filter @smartbots/api dev",
     "build": "pnpm -r build",
+    "build:web": "pnpm --filter @smartbots/web build",
+    "preview:web": "pnpm --filter @smartbots/web preview",
+    "export:html": "pnpm --filter @smartbots/web export:html",
     "typecheck": "pnpm -r typecheck"
   },
   "devDependencies": {
